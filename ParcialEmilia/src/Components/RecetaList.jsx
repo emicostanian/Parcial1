@@ -32,6 +32,7 @@ const RecetaList = () => {
     ? recetas 
     : recetas.filter(receta => receta.type === tipoSeleccionado);
 
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
