@@ -1,0 +1,124 @@
+/* RecetaList.css */
+
+/* Estilos generales */
+.receta-list-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5; 
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end; /* Botón a la derecha */
+    margin-bottom: 20px;
+}
+
+.add-receta-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Modo oscuro */
+.dark .receta-list-container {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Color de texto claro */
+}
+
+.dark .add-receta-btn {
+    background-color: rgb(55, 116, 55); 
+}
+
+.receta-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.receta-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px; /* Ancho fijo en dispositivos grandes */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+.receta-card.dark {
+    background-color: #704646; /* Fondo de tarjeta oscuro */
+    border-color: #5f3434; /* Color de borde en modo oscuro */
+}
+
+.receta-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.details-btn.dark {
+    background-color: #094e64; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.details-btn {
+    background-color: #008CBA; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.delete-btn.dark {
+    background-color: #751e18; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+.delete-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .receta-card {
+        width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .receta-card {
+        width: calc(100% - 20px); /* Una tarjeta por fila en pantallas más pequeñas */
+    }
+
+    .main-title {
+        font-size: 2em; 
+    }
+}
